@@ -36,5 +36,5 @@ jobs:
           echo test, and deploy your project
       - name: Tag
         run: |
-          git tag -a v0.0.1 -a v0.0.1
+          git tag -a v0.0.1 -m "version 0.0.1"
           git push origin --tags
