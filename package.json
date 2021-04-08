@@ -4,7 +4,7 @@
   "description": "![CI](https://github.com/utakeru/github_actions_training/workflows/CI/badge.svg)",
   "main": "index.js",
   "scripts": {
-    "pack": "zip output_$npm_package_version.zip zipTarget.txt",
+    "pack": "FILENAME=output_$npm_package_version.zip && zip $FILENAME zipTarget.txt && echo $FILENAME",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
